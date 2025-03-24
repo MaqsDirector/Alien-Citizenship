@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mysteryScene = document.getElementById("mysteryScene");
     const fakeCrash = document.getElementById("fakeCrash");
     const alienLaugh = document.getElementById("alienLaugh");
+
     alienForm.addEventListener("submit", (Event) => {
         Event.preventDefault();
         const alienName = document.getElementById("alienName").value;
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Alien DJ Mode On..! Its time to Alien Party!!");
         alienLaugh.play();
     });
+    
     document.querySelectorAll("input[name='relation']").forEach((checkbox) => {
         checkbox.addEventListener("change", () => {
             const selectedRelations = Array.from(document.querySelectorAll("input[name='relation']:checked"));
